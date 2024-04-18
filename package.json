@@ -1,0 +1,25 @@
+{
+  "name": "hex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/run.js",
+  "scripts": {
+    "dev": "node esbuild.config.js &&  node build/run.js --watch build"
+  },
+  "workspaces": [
+    "src/users",
+    "src/adapters"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "esbuild": "^0.20.2",
+    "esbuild-node-externals": "^1.13.0",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
